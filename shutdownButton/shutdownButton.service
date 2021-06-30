@@ -1,0 +1,10 @@
+[Unit]
+Description=Allows use of a shutdown button on RPI
+
+[Service]
+User=root
+ExecStart=python3 /etc/shutdownButton/shutdown-button.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
